@@ -386,30 +386,6 @@ body {
   padding: 8px 0 24px;
 }
 
-.print-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 13px 28px;
-  background: var(--section-num-bg);
-  color: #fff;
-  border: 2px solid var(--border-dark);
-  border-radius: var(--radius);
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 1.05rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background 0.18s, transform 0.12s, box-shadow 0.18s;
-}
-
-.print-btn:hover {
-  background: #2a2a28;
-  transform: translateY(-1px);
-}
-
-.print-btn:active { transform: translateY(0); }
 
 .submit-btn {
   display: inline-flex;
