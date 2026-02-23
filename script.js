@@ -458,16 +458,12 @@ async function handleSubmit(e) {
       body: JSON.stringify(formData)
     });
 
-    if (response.ok) {
-      showMessage('Formular erfolgreich übermittelt!', 'success');
-      // Reset form after 2 seconds
-      setTimeout(() => {
-        document.getElementById('mainForm').reset();
-        initForm();
-      }, 2000);
-    } else {
-      throw new Error('Server responded with error');
-    }
+await response.text();
+    showMessage('Formular erfolgreich übermittelt!', 'success');
+    setTimeout(() => {
+      document.getElementById('mainForm').reset();
+      initForm();
+    }, 2000);
   } catch (error) {
     console.error('Submission error:', error);
     showMessage('Fehler beim Absenden. Bitte versuchen Sie es erneut.', 'error');
